@@ -11,6 +11,7 @@ function App() {
       <h1>Task Tracker</h1>
 
       <TaskForm dispatch={dispatch} />
+      <TaskList tasks={tasks} />
 
       <p>Total Tasks: {tasks.length}</p>
     </div>
