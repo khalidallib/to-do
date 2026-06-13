@@ -1,6 +1,10 @@
+import "./css/index.css";
+
 function App() {
   return (
-    <></>
+    <div className="container">
+      <h1>Task Tracker</h1>
+    </div>
   );
 }
 
