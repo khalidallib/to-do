@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/khalidallib/to-do.git/static/css/main.849f0700.css",
+    "main.js": "/khalidallib/to-do.git/static/js/main.3ad0ab40.js",
+    "index.html": "/khalidallib/to-do.git/index.html",
+    "main.849f0700.css.map": "/khalidallib/to-do.git/static/css/main.849f0700.css.map",
+    "main.3ad0ab40.js.map": "/khalidallib/to-do.git/static/js/main.3ad0ab40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.849f0700.css",
+    "static/js/main.3ad0ab40.js"
+  ]
+}
