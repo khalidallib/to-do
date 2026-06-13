@@ -11,6 +11,11 @@ export function taskReducer(tasks, action) {
         }
       ];
 
+    case "DELETE_TASK":
+      return tasks.filter(
+        (task) => task.id !== action.id
+      );
+
     default:
       return tasks;
   }

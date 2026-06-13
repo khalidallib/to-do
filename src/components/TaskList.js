@@ -1,8 +1,14 @@
-function TaskList({ tasks }) {
+import TaskItem from "./TaskItem";
+
+function TaskList({ tasks, dispatch }) {
   return (
     <div>
       {tasks.map((task) => (
-        <p key={task.id}>{task.text}</p>
+        <TaskItem
+          key={task.id}
+          task={task}
+          dispatch={dispatch}
+        />
       ))}
     </div>
   );

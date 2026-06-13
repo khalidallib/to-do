@@ -1,7 +1,8 @@
 import { useReducer } from "react";
-import "./css/index.css";
 import TaskForm from "./components/TaskForm";
+import TaskList from "./components/TaskList";
 import { taskReducer } from "./reducers/taskReducer";
+import "./css/index.css";
 
 function App() {
   const [tasks, dispatch] = useReducer(taskReducer, []);
@@ -11,9 +12,11 @@ function App() {
       <h1>Task Tracker</h1>
 
       <TaskForm dispatch={dispatch} />
-      <TaskList tasks={tasks} />
 
-      <p>Total Tasks: {tasks.length}</p>
+      <TaskList
+        tasks={tasks}
+        dispatch={dispatch}
+      />
     </div>
   );
 }
